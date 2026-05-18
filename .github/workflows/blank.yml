@@ -1,9 +1,18 @@
 name: Hello World
 on: workflow_dispatch
 jobs:
-  download:
-    runs-on:
-      - ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Download
-        run: echo "Welcome to GHA"
+      - name: BUild Step
+        run: scho "A demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test phase
+        run: echo "Running test phase"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to App
+        run: scho "Deploying the app"
