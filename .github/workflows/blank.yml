@@ -1,0 +1,9 @@
+name: Hello World
+on: workflow_dispatch
+jobs:
+  download:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      - name: Download
+        run: echo "Welcome to GHA"
