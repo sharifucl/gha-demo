@@ -8,6 +8,7 @@ jobs:
         run: echo "A demo build"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Test phase
         run: echo "Running test phase"
