@@ -4,8 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: BUild Step
-        run: scho "A demo build"
+      - name: Build Step
+        run: echo "A demo build"
   test:
     runs-on: ubuntu-latest
     steps:
@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to App
-        run: scho "Deploying the app"
+        run: echo "Deploying the app"
