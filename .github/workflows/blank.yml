@@ -17,4 +17,4 @@ jobs:
     needs: test
     steps:
       - name: Deploy to App
-        run: echo "Deploying the app"
+        run: echo "Deploying the app ${{vars.S3_BUCKET_NAME}}"
